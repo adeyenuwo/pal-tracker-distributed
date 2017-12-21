@@ -4,8 +4,6 @@ applications:
   host: timesheets-pal-paul-ade
   memory: 1G
   instances: 1
-  env:
-
   services:
   - tracker-timesheets-database
   - tracker-service-registry
