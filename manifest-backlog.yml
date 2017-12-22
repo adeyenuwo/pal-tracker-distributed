@@ -8,3 +8,18 @@ applications:
   - tracker-backlog-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
+  applications:
+  - name: tracker-backlog
+    path: ./applications/backlog-server/build/libs/backlog-server.jar
+    host: backlog-pal-INITIALS
+    memory: 1G
+    instances: 1
+    env:
+      GRANT_TYPE: client_credentials
+      SECURITY_USER_NAME: actuator
+      SECURITY_USER_PASSWORD: operations4red
+    services:
+    - tracker-backlog-database
+    - tracker-service-registry
+    - tracker-circuit-breaker-dashboard
+    - tracker-sso
