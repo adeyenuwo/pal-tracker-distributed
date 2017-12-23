@@ -15,7 +15,7 @@ import org.springframework.web.client.RestOperations;
 import java.util.TimeZone;
 
 
-@SpringBootApplication(exclude=RabbitAutoConfiguration.class)
+@SpringBootApplication //(exclude=RabbitAutoConfiguration.class)
 @EnableCircuitBreaker
 @EnableEurekaClient
 @EnableWebSecurity
