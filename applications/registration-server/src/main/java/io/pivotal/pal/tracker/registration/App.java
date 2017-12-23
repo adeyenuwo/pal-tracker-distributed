@@ -11,7 +11,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import java.util.TimeZone;
 
 
-@SpringBootApplication(exclude=RabbitAutoConfiguration.class)
+@SpringBootApplication//(exclude=RabbitAutoConfiguration.class)
 @EnableEurekaClient
 @EnableWebSecurity
 @EnableResourceServer
